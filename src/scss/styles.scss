@@ -1,0 +1,79 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 12.70fr 6.34fr;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    h3 {
+        display: flex;
+        align-items: flex-end;
+        font-size: 30px;
+        font-weight: 600;
+    }
+   
+    .nav-bar__col1 {
+        padding: 10px 0;
+        padding-left: 14px;
+        display: grid;
+        grid-template-columns: 1.84fr 10.88fr;
+        &:hover {
+            background-color: #E0E1E2;
+            .nav-bar__black {
+                color: white;
+            }
+            .nav-bar__gray {
+                color: black;
+            }
+        }
+        .nav-bar__black{
+            color: black;
+        }
+        .nav-bar__gray {
+            color: rgb(204, 204, 204);
+            &:hover {
+                color: white;
+                .nav-bar__black{
+                    color: black;
+                }
+            }
+            span {
+                margin-right: 55px;
+            }
+        }
+    }
+        
+    .nav-bar__col2 {
+        padding: 10px 0;
+        padding-left: 14px;
+        display: grid;
+        grid-template-columns: 2.10fr 3.80fr 0.45fr;
+        &:hover {
+            background-color: #E0E1E2;
+        }
+        h4 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }  
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13, 4.23fr 0.33fr);
+    span {
+        display: flex;
+        align-items: center;
+        margin-left: 14px;
+        font-size:15px;
+        font-weight: 500;
+    }
+}
